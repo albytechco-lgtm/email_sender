@@ -1,5 +1,13 @@
 {
-  "sent_count": 0,
-  "last_batch": [],
-  "all_sent_emails": []
+  "sent_count": 3,
+  "last_batch": [
+    "GCALDWELL@GO1PRIORITY.COM",
+    "TWELVE12ROADANDBRIDGE@YAHOO.COM",
+    "181MATERIALS@GMAIL.COM"
+  ],
+  "all_sent_emails": [
+    "181MATERIALS@GMAIL.COM",
+    "TWELVE12ROADANDBRIDGE@YAHOO.COM",
+    "GCALDWELL@GO1PRIORITY.COM"
+  ]
 }
