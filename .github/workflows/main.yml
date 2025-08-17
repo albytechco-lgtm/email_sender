@@ -41,7 +41,7 @@ jobs:
         YOUR_PASSWORD: ${{ secrets.YOUR_PASSWORD }}
         SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
         SMTP_PORT: ${{ secrets.SMTP_PORT }}
-        CSV_FILE: smykm_emails.csv
+        CSV_FILE: personalized_weird_emails.csv
         LOG_FILE: email_log.txt
         BATCH_SIZE: ${{ secrets.BATCH_SIZE }}
         MIN_GAP_MINUTES: ${{ secrets.MIN_GAP_MINUTES }}
