@@ -1,0 +1,29 @@
+name: Send Cold Emails
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'  # Runs every 2 hours
+  workflow_dispatch:        # Allows manual trigger
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run email sender
+        env:
+          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          YOUR_EMAIL: ${{ secrets.YOUR_EMAIL }}
+          YOUR_PASSWORD: ${{ secrets.YOUR_PASSWORD }}
+        run: python email_sender_secure.py
