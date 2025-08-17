@@ -1,13 +1,16 @@
 {
-  "sent_count": 3,
+  "sent_count": 6,
   "last_batch": [
-    "GCALDWELL@GO1PRIORITY.COM",
-    "TWELVE12ROADANDBRIDGE@YAHOO.COM",
-    "181MATERIALS@GMAIL.COM"
+    "mtzremodelingtx@gmail.com",
+    "buzzhomeremodeling@gmail.com",
+    "cavvremodeling@yahoo.com"
   ],
   "all_sent_emails": [
+    "GCALDWELL@GO1PRIORITY.COM",
+    "mtzremodelingtx@gmail.com",
     "181MATERIALS@GMAIL.COM",
     "TWELVE12ROADANDBRIDGE@YAHOO.COM",
-    "GCALDWELL@GO1PRIORITY.COM"
+    "buzzhomeremodeling@gmail.com",
+    "cavvremodeling@yahoo.com"
   ]
 }
