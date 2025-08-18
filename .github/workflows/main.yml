@@ -4,15 +4,9 @@ permissions:
 
 on:
   schedule:
-    # Main schedule: every 2 hours at minute 0 (00:00, 02:00, 04:00, …)
+    # Run every 2 hours (cron syntax: minute hour day month day-of-week)
     - cron: '0 */2 * * *'
-    # Backup schedule: 5 minutes later, in case GitHub skips one
-    - cron: '5 */2 * * *'
   workflow_dispatch: # Allow manual triggering
-
-concurrency:
-  group: email-sender
-  cancel-in-progress: false  # don’t cancel overlapping runs
 
 jobs:
   send-emails:
@@ -86,4 +80,4 @@ jobs:
           cat email_progress.json
         else
           echo "No progress file found (first run)"
-        fi
+        fi 
